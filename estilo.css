@@ -1,0 +1,125 @@
+html {
+    font-size: 90%;  
+    margin: 0;
+    padding: 0;    
+}
+
+:root {
+    --white: #fafafb;
+    --purple:#9a67ea;
+    --blue-light:#04d4c3;
+    --blue-dark:#2a73c2;
+    --green: #2c7b90;
+ 
+ }
+
+body{
+    background: linear-gradient(to bottom,var(--purple),var(--blue-light));
+    height: 200vh;
+    box-sizing: border-box;  /* Hack para Box Model */
+    
+}
+
+ label {
+    
+    color:#ffffff;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color:var(--white);
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    animation:mover-izquierda-derecha 1s ;
+    font-size: 2rem;
+    text-align: center;
+    color:var(--white);
+    margin: 0;
+    padding: 0;
+}
+@keyframes mover-izquierda-derecha{
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform:translateX(10px);
+    }
+}
+h3{
+    animation:mover-izquierda-derecha 1s;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+@keyframes mover-izquierda-derecha{
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform:translateX(5px);
+    }
+}
+span {
+    color: var(--white);
+    
+}
+*, *:before, *:after { 
+    box-sizing: inherit;
+}
+.contenedor {
+    width: 50%;
+    max-width: 100rem;
+    margin: 0 auto;
+    flex: 1;
+}
+.contendor_formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#perfil_fecha {
+    color: var(--white);
+    text-align: right;
+    padding: 20px 0 5px 0px;
+    font-size: 15px;
+}
+.form-control, .form-select {
+    border-radius: 15px;
+    height: 40px;
+    background-color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .img_prioridad {
+        width: 3%;
+        height: auto;
+        margin: auto;
+    }
+
+}
+#button_eliminar{
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-align: center;
+    color:#f70a0a;
+    width: 10%;
+    right: 5%;
+    top: 5%;
+    text-align: center;
+}
+.contenedor_resultado{
+    font-size: 15px;
+}
+.contenedor_resultado i {
+    font-size: 30px;
+}
